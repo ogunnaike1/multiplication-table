@@ -46,39 +46,28 @@
          tableHTML += '</tr>';
     }
     tableHTML += `</table>`;
-    showTable.innerHTML =  tableHTML
+    result =  tableHTML
+
+    
+    }
+    function substractTable(){
+        result = ''
+        let tableHTML = `<table style="border-collapse: collapse; border: 1px solid black;">`;
+        for(let i = 1; i <= inputColumn.value; i++){
+            tableHTML += '<tr>';
+            for(let j = 1; j <= inputRow.value; j++){
+                tableHTML += `<td>${i} - ${j} =  ${i-j}</td>`;
+         }
+         tableHTML += '</tr>';
+    }
+    tableHTML += `</table>`;
+    result =  tableHTML
     
     }
 
 
-    function substractTable(){
-        result = ''
-        for(let i = 1; i <= inputColumn.value; i++){
-            for(let j = 1; j <= inputRow.value; j++){
-                    result +=  `<p>${i} - ${j} =  ${i-j}</p>`
-         }
-    }
-    }
-    function multiplyTable(){
-        result = ''
-        for(let i = 1; i <= inputColumn.value; i++){
-            for(let j = 1; j <= inputRow.value; j++){
-                    result +=  `<p> ${i} X ${j} =  ${i*j}</p>`
-         }
-    }
-    }
-
-    function divideTable(){
-        result = ''
-        for(let i = 1; i <= inputColumn.value; i++){
-            for(let j = 1; j <= inputRow.value; j++){
-                    result +=  `<p> ${i} / ${j} =  ${i/j}</p>`
-         }
-    }
-    }
-
     function showResult(){
-        showTable.innerHTML = showTable
+        showTable.innerHTML = result
         
     }
 
@@ -92,4 +81,5 @@
 
 </script>
 </html>
+
 
