@@ -25,15 +25,7 @@
 
     <script>
         function checkScore(){
-            if(inputScore.value >= 70 && inputScore.value <= 100 ){
-               showResult.innerHTML = 'A - Excellent'
-            }else if(inputScore.value >= 60 && inputScore.value <= 69 ){
-                showResult.innerHTML = 'B - Good'
-            }else if(inputScore.value >= 50 && inputScore.value <= 59 ){
-                showResult.innerHTML = 'C - Credit'
-            }else if(inputScore.value >= 45 && inputScore.value <= 49 ){
-                showResult.innerHTML = 'D - Average'
-            }else if(inputScore.value >= 40 && inputScore.value <= 44 ){
+      
                 showResult.innerHTML = 'E - Pass'
             }else if(inputScore.value > 0 && inputScore.value < 40 ){
                 showResult.innerHTML = 'F - Fail'
