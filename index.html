@@ -50,7 +50,16 @@
 
     
     }
-
+    function substractTable(){
+        result = ''
+        let tableHTML = `<table style="border-collapse: collapse; border: 1px solid black;">`;
+        for(let i = 1; i <= inputColumn.value; i++){
+            tableHTML += '<tr>';
+            for(let j = 1; j <= inputRow.value; j++){
+                tableHTML += `<td>${i} - ${j} =  ${i-j}</td>`;
+         }
+         tableHTML += '</tr>';
+    }
     tableHTML += `</table>`;
     result =  tableHTML
     
